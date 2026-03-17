@@ -118,10 +118,7 @@
     }
   }
 
-  const lblColor = '#A6805B';
-  svg += `
-    <text x="${Math.round(WRAP_W / 2)}" y="${WRAP_H - 42}" text-anchor="middle" font-family="'Courier Prime', monospace" font-size="34" letter-spacing="12" fill="${lblColor}" opacity="0.6" text-transform="uppercase">A SLICEBOX SELECTION</text>
-  </svg>`;
+  svg += `</svg>`;
 
   container.innerHTML = svg;
 
