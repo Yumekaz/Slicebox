@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>slicebox — send coffee cake</title>
+<link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<div class="landing-screen">
+  <div id="hero-cake" style="margin-bottom:14px"></div>
+  <a href="index.html" class="logo logo-lg">Slicebox</a>
+  <p style="font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--muted);margin-top:6px">coffee cake, delivered digitally</p>
+  <p class="landing-sub">Beautiful slices,<br>sent from the heart.</p>
+  <div class="landing-btns">
+    <a href="pick.html?mode=color" class="btn btn-dark">Build a Box</a>
+  </div>
+
+  <div class="landing-sig">made with slicebox ☕</div>
+</div>
+<script src="js/state.js"></script>
+<script src="js/data.js"></script>
+<script>
+  SB.state.clear();
+  const hero = document.getElementById('hero-cake');
+  const pick = SB.CAKES[Math.floor(Math.random() * SB.CAKES.length)];
+  hero.innerHTML = SB.renderCakeCard(pick.id, 130, false);
+</script>
+</body>
+</html>

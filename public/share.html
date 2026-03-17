@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Your box is ready — slicebox</title>
+<link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<div class="screen" style="padding-top:0">
+
+  <div class="top-bar">
+    <a href="card.html" class="back-link">← Back</a>
+    <a href="index.html" class="logo logo-sm">Slicebox</a>
+  </div>
+
+  <p class="page-heading">Your box is ready</p>
+
+  <div class="share-wrap">
+
+    <!-- Mini arrangement preview -->
+    <div id="preview-arrange" style="display:flex;justify-content:center;margin-bottom:10px"></div>
+
+    <p style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:4px">
+      Share this link — it opens like a gift
+    </p>
+    <div class="share-url-box" id="share-url">Generating link…</div>
+
+    <button class="btn btn-dark" style="width:100%;margin-bottom:10px" onclick="copyLink()">Copy Link</button>
+    <div class="copy-confirm" id="copy-confirm"></div>
+
+    <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border)">
+      <a href="index.html" class="btn btn-outline" style="width:100%">Send Another</a>
+    </div>
+
+  </div>
+
+</div>
+<script src="js/state.js"></script>
+<script src="js/data.js"></script>
+<script src="js/share.js"></script>
+</body>
+</html>

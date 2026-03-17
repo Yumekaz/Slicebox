@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Write the card — slicebox</title>
+<link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<div class="screen" style="padding-top:0">
+
+  <div class="top-bar">
+    <a href="arrange.html" class="back-link">← Back</a>
+    <a href="index.html" class="logo logo-sm">Slicebox</a>
+  </div>
+
+  <p class="page-heading">Write the card</p>
+
+  <div class="card-screen">
+
+    <!-- Left flanking cakes -->
+    <div class="card-sides" id="sides-left"></div>
+
+    <!-- The card -->
+    <div class="card-center">
+      <div class="card-box">
+        <div class="card-dear">
+          Dear&nbsp;<input class="card-name-in" id="inp-to" placeholder="Beloved," maxlength="40" autocomplete="off"/>
+        </div>
+
+        <textarea class="card-textarea" id="inp-msg"
+          placeholder="I have so much to tell you, but only this much space on this card! Still, you must know..."
+          maxlength="280"></textarea>
+
+        <div class="card-sincerely">Sincerely,</div>
+        <input class="card-from-in" id="inp-from" placeholder="Secret Admirer" maxlength="40" autocomplete="off"/>
+      </div>
+    </div>
+
+    <!-- Right flanking cakes -->
+    <div class="card-sides" id="sides-right"></div>
+
+  </div>
+
+  <div class="bottom-nav">
+    <a href="arrange.html" class="btn btn-outline">Back</a>
+    <button class="btn btn-dark btn-disabled" id="next-btn" onclick="goNext()">Next</button>
+  </div>
+
+</div>
+<script src="js/state.js"></script>
+<script src="js/data.js"></script>
+<script src="js/card.js"></script>
+</body>
+</html>

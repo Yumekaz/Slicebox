@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>You've got cake — slicebox</title>
+<link rel="stylesheet" href="css/main.css"/>
+<style>
+  /* GIFT TAG */
+  .gift-tag {
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
+    width: 240px;
+    background: #FFFBF2;
+    border: 1.5px solid #C8B898;
+    padding: 20px 24px;
+    box-shadow: -6px 8px 16px rgba(0,0,0,0.15);
+    transform: rotate(-3deg);
+    z-index: 100;
+    font-family: 'Courier Prime', monospace;
+    color: var(--ink);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .gift-tag::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 45%;
+    width: 14px;
+    height: 14px;
+    background: #F2EDE3;
+    border: 1.5px solid #C8B898;
+    border-radius: 50%;
+    z-index: 101;
+  }
+  .gift-tag::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: calc(45% + 6px);
+    width: 2px;
+    height: 35px;
+    background: #8A5830;
+    transform: rotate(-15deg);
+    z-index: 99;
+  }
+  .tag-dear { font-weight: 700; font-size: 13px; margin-bottom: 4px; }
+  .tag-msg { font-size: 12px; line-height: 1.6; white-space: pre-wrap; margin-bottom: 8px; }
+  .tag-sign { font-weight: 700; font-size: 12px; text-align: right; }
+</style>
+</head>
+<body>
+<div class="screen" style="padding-top:0" id="receive-screen">
+
+  <div class="top-bar" style="justify-content:center">
+    <a href="index.html" class="logo logo-sm">Slicebox</a>
+  </div>
+
+  <div class="receive-wrap">
+    <p style="font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--muted);margin-bottom:6px">
+      ☕ you've received a cake box
+    </p>
+    <p class="receive-from" id="from-line"></p>
+
+    <!-- The Wrapper Arrangement & Attached Tag -->
+    <div class="arrange-wrap" style="position:relative;margin:24px 0 60px">
+      <div class="arrange-svg-wrap" id="arrange-container"></div>
+      
+      <!-- The card as a gift tag hanging off the wrapper -->
+      <div class="gift-tag" id="gift-tag" style="opacity:0;transition:opacity .6s ease .4s">
+        <div class="tag-dear" id="tag-dear"></div>
+        <div class="tag-msg"  id="tag-msg"></div>
+        <div class="tag-sign" id="tag-sign"></div>
+      </div>
+    </div>
+
+    <div class="bottom-nav" style="margin-top:20px">
+      <a href="index.html" class="btn btn-dark">Send one back →</a>
+    </div>
+
+    <p style="margin-top:20px;font-size:10px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;font-style:italic">made with slicebox ☕</p>
+  </div>
+
+</div>
+<script src="js/state.js"></script>
+<script src="js/data.js"></script>
+<script src="js/receive.js"></script>
+</body>
+</html>
