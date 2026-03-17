@@ -2,18 +2,18 @@
 window.SB = window.SB || {};
 
 SB.CAKES = [
-  { id: 'streusel',         name: 'STREUSEL',                 meaning: 'Comfort',    occasion: 'Origin: United States', bg: '#D4956A', img: 'assets/cakes/Streuse Cake.png' },
-  { id: 'opera',            name: 'OPERA CAKE',               meaning: 'Elegance',   occasion: 'Flavor: Espresso & Almond', bg: '#7A5030', img: 'assets/cakes/Opera Cake.png' },
-  { id: 'gugelhupf',        name: 'GUGELHUPF',                meaning: 'Tradition',  occasion: 'Origin: Central Europe', bg: '#e0c76e', img: 'assets/cakes/Gugelhupf.png' },
-  { id: 'tiramisu',         name: 'TIRAMISU',                 meaning: 'Indulgence', occasion: "Translation: 'Pick Me Up'", bg: '#7A4828', img: 'assets/cakes/Tiramisu.png' },
-  { id: 'victoria_sponge',  name: 'VICTORIA SPONGE',          meaning: 'Simplicity', occasion: 'Origin: United Kingdom', bg: '#e6dca8', img: 'assets/cakes/Victoria Sponge.png' },
-  { id: 'koffiekoek',       name: 'KOFFIEKOEK',               meaning: 'Craft',      occasion: 'Origin: Belgium', bg: '#C87840', img: 'assets/cakes/Koffiekoek.png' },
-  { id: 'ny_crumb',         name: 'NY CRUMB CAKE',            meaning: 'Nostalgia',  occasion: 'Origin: United States', bg: '#D0906A', img: 'assets/cakes/NY Crumb Cake.png'},
-  { id: 'kaffebrod',        name: 'SWEDISH KAFFEBRÖD',        meaning: 'Heritage',   occasion: 'Origin: Sweden', bg: '#9B5878', img: 'assets/cakes/Swedish Cardamom Kaffebrod.png'},
-  { id: 'stollen',          name: 'STOLLEN',                  meaning: 'Festivity',  occasion: 'Origin: Germany', bg: '#d48a6a', img: 'assets/cakes/Stollen.png'},
-  { id: 'babka',            name: 'BABKA',                    meaning: 'Complexity', occasion: 'Origin: Eastern Europe', bg: '#6B3820', img: 'assets/cakes/babka.png'},
-  { id: 'gateau_aux_pommes',name: 'APPLE GÂTEAU',             meaning: 'Rustic',     occasion: 'Origin: France', bg: '#C87858', img: 'assets/cakes/Gateau aux Pommes.png'},
-  { id: 'kasutera',         name: 'KASUTERA',                 meaning: 'Serenity',   occasion: 'Origin: Japan', bg: '#E0C040', img: 'assets/cakes/Kasutera.png'},
+  { id: 'streusel',         name: 'STREUSEL',                 meaning: 'Comfort',    occasion: 'Origin: United States', bg: '#D4956A', img: 'assets/cakes/Streuse Cake.webp' },
+  { id: 'opera',            name: 'OPERA CAKE',               meaning: 'Elegance',   occasion: 'Flavor: Espresso & Almond', bg: '#7A5030', img: 'assets/cakes/Opera Cake.webp' },
+  { id: 'gugelhupf',        name: 'GUGELHUPF',                meaning: 'Tradition',  occasion: 'Origin: Central Europe', bg: '#e0c76e', img: 'assets/cakes/Gugelhupf.webp' },
+  { id: 'tiramisu',         name: 'TIRAMISU',                 meaning: 'Indulgence', occasion: "Translation: 'Pick Me Up'", bg: '#7A4828', img: 'assets/cakes/Tiramisu.webp' },
+  { id: 'victoria_sponge',  name: 'VICTORIA SPONGE',          meaning: 'Simplicity', occasion: 'Origin: United Kingdom', bg: '#e6dca8', img: 'assets/cakes/Victoria Sponge.webp' },
+  { id: 'koffiekoek',       name: 'KOFFIEKOEK',               meaning: 'Craft',      occasion: 'Origin: Belgium', bg: '#C87840', img: 'assets/cakes/Koffiekoek.webp' },
+  { id: 'ny_crumb',         name: 'NY CRUMB CAKE',            meaning: 'Nostalgia',  occasion: 'Origin: United States', bg: '#D0906A', img: 'assets/cakes/NY Crumb Cake.webp'},
+  { id: 'kaffebrod',        name: 'SWEDISH KAFFEBRÖD',        meaning: 'Heritage',   occasion: 'Origin: Sweden', bg: '#9B5878', img: 'assets/cakes/Swedish Cardamom Kaffebrod.webp'},
+  { id: 'stollen',          name: 'STOLLEN',                  meaning: 'Festivity',  occasion: 'Origin: Germany', bg: '#d48a6a', img: 'assets/cakes/Stollen.webp'},
+  { id: 'babka',            name: 'BABKA',                    meaning: 'Complexity', occasion: 'Origin: Eastern Europe', bg: '#6B3820', img: 'assets/cakes/babka.webp'},
+  { id: 'gateau_aux_pommes',name: 'APPLE GÂTEAU',             meaning: 'Rustic',     occasion: 'Origin: France', bg: '#C87858', img: 'assets/cakes/Gateau aux Pommes.webp'},
+  { id: 'kasutera',         name: 'KASUTERA',                 meaning: 'Serenity',   occasion: 'Origin: Japan', bg: '#E0C040', img: 'assets/cakes/Kasutera.webp'},
 ];
 
 SB.getCakeById = (id) => SB.CAKES.find(c => c.id === id);

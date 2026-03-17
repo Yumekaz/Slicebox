@@ -90,7 +90,7 @@
         <feDropShadow dx="0" dy="18" stdDeviation="15" flood-color="rgba(0,0,0,0.3)"/>
       </filter>
     </defs>
-    <image href="assets/wrapper.png" x="0" y="0" width="${WRAP_W}" height="${WRAP_H}" preserveAspectRatio="xMidYMid meet"/>
+    <image href="assets/wrapper.webp" x="0" y="0" width="${WRAP_W}" height="${WRAP_H}" preserveAspectRatio="xMidYMid meet"/>
   `;
 
   let placed = [];
