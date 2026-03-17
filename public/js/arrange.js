@@ -9,8 +9,10 @@
   }
 
   // Restore back link
-  document.getElementById('back-link').href = 'pick.html';
-  document.getElementById('back-btn').href = 'pick.html';
+  const backLink = document.getElementById('back-link');
+  if (backLink) backLink.href = 'pick.html';
+  const backBtn = document.getElementById('back-btn');
+  if (backBtn) backBtn.href = 'pick.html';
 
   const container = document.getElementById('arrange-container');
 

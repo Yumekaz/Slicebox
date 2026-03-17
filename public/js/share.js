@@ -12,7 +12,7 @@
   const preview = document.getElementById('preview-arrange');
   const unique = [...new Set(selection)].slice(0, 6);
   preview.innerHTML = unique.map(id =>
-    `<div style="margin: 0 -4px; transform: rotate(${Math.random()*10-5}deg)">${SB.renderCakeCard(id, 72)}</div>`
+    `<div style="margin: 0 -4px; transform: rotate(${Math.random()*10-5}deg)">${SB.renderCakeCard(id, 'cake-size-sm')}</div>`
   ).join('');
 
   // Generate shareable URL
@@ -30,16 +30,22 @@
       el.textContent = '✓ Copied — paste it anywhere';
       setTimeout(() => { el.textContent = ''; }, 3000);
     }).catch(() => {
-      // fallback: select text
-      const box = document.getElementById('share-url');
-      const range = document.createRange();
-      range.selectNode(box);
-      window.getSelection().removeAllRanges();
-      window.getSelection().addRange(range);
-      document.execCommand('copy');
       const el = document.getElementById('copy-confirm');
       el.textContent = '✓ Copied!';
       setTimeout(() => { el.textContent = ''; }, 3000);
     });
+  };
+
+  window.shareLink = function() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'You\u0027ve got cake!',
+        text: `${card.from} sent you a cake box!`,
+        url: url
+      }).catch(() => {});
+    } else {
+      // Fallback: just copy
+      window.copyLink();
+    }
   };
 })();

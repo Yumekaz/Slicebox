@@ -7,10 +7,9 @@
 <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-<div class="screen" style="padding-top:0;padding-bottom:90px">
+<div class="screen" style="padding-top:0;padding-bottom:140px">
 
   <div class="top-bar">
-    <a href="index.html" class="back-link">← Back</a>
     <a href="index.html" class="logo logo-sm">Slicebox</a>
   </div>
 
@@ -21,10 +20,12 @@
 </div>
 
 <!-- Fixed bottom pills bar -->
-<div class="pills-bar" id="pills-bar">
-  <span class="pills-count" id="pills-count">0 / 10</span>
-  <div id="pills-list" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center;flex:1"></div>
-  <a href="arrange.html" class="btn btn-dark pills-next btn-disabled" id="next-btn" style="padding:10px 24px;font-size:11px">NEXT</a>
+<div class="pills-bar" id="pills-bar" style="flex-direction:column;gap:14px;padding:18px 20px">
+  <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center">
+    <span class="pills-count" id="pills-count">0 / 10</span>
+    <div id="pills-list" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center"></div>
+  </div>
+  <a href="arrange.html" class="btn btn-dark btn-disabled" id="next-btn" style="padding:14px 40px;font-size:13px;white-space:nowrap">Next</a>
 </div>
 
 <script src="js/state.js"></script>

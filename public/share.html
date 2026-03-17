@@ -10,7 +10,6 @@
 <div class="screen" style="padding-top:0">
 
   <div class="top-bar">
-    <a href="card.html" class="back-link">← Back</a>
     <a href="index.html" class="logo logo-sm">Slicebox</a>
   </div>
 
@@ -18,18 +17,23 @@
 
   <div class="share-wrap">
 
-    <!-- Mini arrangement preview -->
-    <div id="preview-arrange" style="display:flex;justify-content:center;margin-bottom:10px"></div>
-
-    <p style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:4px">
-      Share this link — it opens like a gift
+    <p style="font-size:15px;color:var(--ink);margin-bottom:24px;font-style:italic;line-height:1.6">
+      Hi, I made this box for you!
     </p>
-    <div class="share-url-box" id="share-url">Generating link…</div>
 
-    <button class="btn btn-dark" style="width:100%;margin-bottom:10px" onclick="copyLink()">Copy Link</button>
+    <!-- Mini arrangement preview -->
+    <div id="preview-arrange" style="display:flex;justify-content:center;margin-bottom:28px"></div>
+
+    <!-- Hidden URL for copy/share -->
+    <div id="share-url" style="display:none">Generating link…</div>
+
+    <div style="display:flex;gap:12px;justify-content:center;margin-bottom:10px">
+      <button class="btn btn-dark" onclick="copyLink()">Copy Link</button>
+      <button class="btn btn-outline" onclick="shareLink()">Share</button>
+    </div>
     <div class="copy-confirm" id="copy-confirm"></div>
 
-    <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border)">
+    <div style="margin-top:28px;padding-top:20px;border-top:1px solid var(--border)">
       <a href="index.html" class="btn btn-outline" style="width:100%">Send Another</a>
     </div>
 
