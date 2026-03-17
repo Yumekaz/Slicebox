@@ -52,6 +52,29 @@
   .tag-dear { font-weight: 700; font-size: 13px; margin-bottom: 4px; }
   .tag-msg { font-size: 12px; line-height: 1.6; white-space: pre-wrap; margin-bottom: 8px; }
   .tag-sign { font-weight: 700; font-size: 12px; text-align: right; }
+
+  /* MOBILE RESPONSIVE */
+  @media (max-width: 600px) {
+    .gift-tag {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      margin: 20px auto 40px;
+      width: 100%;
+      max-width: 320px;
+      transform: rotate(-1deg);
+      opacity: 1 !important; /* Always show or better reveal */
+    }
+    .gift-tag::before, .gift-tag::after {
+      display: none; /* Hide the pin/string on mobile for cleaner look */
+    }
+    .arrange-wrap {
+      margin-bottom: 0 !important;
+    }
+    .receive-wrap {
+      padding-bottom: 40px;
+    }
+  }
 </style>
 </head>
 <body>
