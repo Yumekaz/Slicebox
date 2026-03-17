@@ -84,7 +84,7 @@
       </filter>
     </defs>
 
-    <image href="assets/wrapper.png" x="0" y="0" width="${WRAP_W}" height="${WRAP_H}" preserveAspectRatio="xMidYMid meet"/>
+    <image href="assets/wrapper.webp" x="0" y="0" width="${WRAP_W}" height="${WRAP_H}" preserveAspectRatio="xMidYMid meet"/>
   `;
 
   let placed = [];

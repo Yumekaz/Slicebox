@@ -22,6 +22,7 @@ Each has: a unique hand-drawn SVG illustration, watercolor blob background, uniq
 
 ```
 slicebox/
+├── wrapper.webp              ← Optimised background image
 ├── public/                  ← Static site root (served by Vercel)
 │   ├── index.html           Landing
 │   ├── pick.html            Pick 6–10 slices
